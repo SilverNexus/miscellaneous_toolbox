@@ -29,7 +29,7 @@ class match_table {
 		string path_to_image;
 		table_element *head;
 	public:
-		/**
+		/*
 		 * Constructor to initialize an empty match list for image img
 		 * head is initialized to zero, or an empty list.
 		 *
@@ -38,7 +38,7 @@ class match_table {
 		 */
 		match_table(Mat *img, string path);
 
-		/**
+		/*
 		 * Constructor to initialize a given match list for image img
 		 * Makes a deep copy of the list at hand, so the original may
 		 * be dealt with accordingly.
@@ -52,13 +52,13 @@ class match_table {
 		 */
 		match_table(Mat *img, table_element *lst, string path);
 
-		/**
+		/*
 		 * Destructor to clean up dynamically allocated image and
 		 * match list information.
 		 */
 		~match_table();
 
-		/**
+		/*
 		 * Method to add an element to the list of matches
 		 * Performs a deep copy of the image passed so the initial
 		 * image may be dealt with as otherwise needed.
@@ -68,7 +68,7 @@ class match_table {
 		 */
 		void add_match(Mat *img_match, string path);
 
-		/**
+		/*
 		 * Method to remove an element to the list of matches
 		 * Returns the removed image data for further operation
 		 *
