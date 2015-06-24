@@ -10,18 +10,18 @@
 #ifndef MATCHTABLE_H
 #define MATCHTABLE_H
 
-// TODO: Make sure this is the right include
-#include <opencv.h>
+#include <opencv2/core/core.hpp>
 
 #include <string>
 
 using namespace std;
+using namespace cv;
 
 struct table_element{
 	Mat *img;
 	string path_to_img;
 	table_element *next;
-}
+};
 
 class match_table {
 	private:
@@ -79,3 +79,6 @@ class match_table {
 		 */
 		Mat *remove_match(string filename);
 };
+
+#endif
+

@@ -6,8 +6,12 @@
  * Author: Daniel Hawkins
  */
 
-// TODO: Ensure this is the right include.
-#include <opencv.h>
+#ifndef MATCH_H
+#define MATCH_H
+
+#include <opencv2/core/core.hpp>
+
+using namespace cv;
 
 /**
  * Compares the matrices a and b for equality.
@@ -20,3 +24,4 @@
  */
 bool does_match(const Mat &a, const Mat &b);
 
+#endif

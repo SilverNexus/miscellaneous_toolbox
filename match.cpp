@@ -6,6 +6,9 @@
  * Author: Daniel Hawkins
  */
 
+#include "match.h"
+using namespace cv;
+
 bool does_match(const Mat &a, const Mat &b){
 	// TODO: Do I need to set the size of the Matrix, or does OpenCV handle it for me?
 	Mat out;

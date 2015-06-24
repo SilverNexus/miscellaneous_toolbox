@@ -9,12 +9,13 @@
 
 #include "image_match_table.h"
 
-using namepsace std;
+using namespace std;
+using namespace cv;
 
 /* Constructors */
 match_table::match_table(Mat *img, string path){
 	path_to_image = path;
-	img_to_match_on = img->clone();
+	*img_to_match_on = img->clone();
 	head = 0;
 }
 
@@ -26,7 +27,7 @@ match_table::match_table(Mat *img, table_element *lst, string path){
 		add_match(tmp->img, tmp->path_to_img);
 		tmp = tmp->next;
 	}
-	img_to_match_on = img->clone();
+	*img_to_match_on = img->clone();
 }
 
 match_table::~match_table(){
@@ -44,7 +45,7 @@ match_table::~match_table(){
 
 void match_table::add_match(Mat *img_match, string path){
 	table_element *new_el = new table_element();
-	new_el->img = img_match->clone();
+	*(new_el->img) = img_match->clone();
 	new_el->path_to_img = path;
 	new_el->next = head;
 	head = new_el;
