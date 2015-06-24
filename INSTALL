@@ -1,0 +1,23 @@
+Installation Instructions for imagaematcher
+-------------------------------------------
+
+Windows:
+1. Download and install CMake.
+2. Download the OpenCV libraries.
+3. Configure the project using CMake.
+4. Compile using 'make'.
+5. Install using 'make install'.
+
+Linux:
+1. Acquire packages for opencv libraries and cmake.
+2. Configure the project using CMake.
+3. Compile and install the project ('make && sudo make install').
+
+
+
+
+Required to run and install:
+	-- OpenCV libraries.
+		Version 3.0 was used in development, probably your best bet
+	-- CMake
+		Version 2.8 or higher should suffice
