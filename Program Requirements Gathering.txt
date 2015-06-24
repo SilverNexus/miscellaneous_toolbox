@@ -1,0 +1,16 @@
+Use OpenCV to:
+Find duplicate images.
+Indicate which one has the highest resolution (optional).
+
+It should take the images, compare them, list what matches ( no duplicates in list like x is y ...  y is x) then clicking on the match, files are listed, then clicking on files, file attributes, properties are listed.
+
+Raw matches (according to Troy) only, no need to adjust for aspect ratio. We'll see if that actually works or not.
+
+Efficiency is a minor concern.
+
+Will have 16x16, 32x32, and 64x64 icon set. Troy said he'd produce those.
+
+
+Comparison of images is likely O(n^2). All images need to be compared against all other images.
+
+Images are defined as files with .jpg, .jpeg, or .png extensions.
