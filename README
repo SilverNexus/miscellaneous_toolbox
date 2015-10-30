@@ -3,3 +3,7 @@ Each folder contains a self-contained tool. The current tools are described belo
 imagematcher (IN PROGRESS):
 Matches images within a set of images, singling out the duplicates.
 It is intended to be used for large image sets.
+
+office_license_checker (CODE NEEDED):
+Finds the tool for checking Office's license keys and outputs its results.
+Intended for use in bulk when many copies of Office are to be found.
