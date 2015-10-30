@@ -7,3 +7,4 @@ It is intended to be used for large image sets.
 office_license_checker (CODE NEEDED):
 Finds the tool for checking Office's license keys and outputs its results.
 Intended for use in bulk when many copies of Office are to be found.
+EXECUTES IN WINDOWS ONLY.
