@@ -1,4 +1,4 @@
-Each folder contains a self-contained tool. The current tools are descriped below:
+Each folder contains a self-contained tool. The current tools are described below:
 
 imagematcher (IN PROGRESS):
 Matches images within a set of images, singling out the duplicates.
