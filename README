@@ -1,0 +1,5 @@
+Each folder contains a self-contained tool. The current tools are descriped below:
+
+imagematcher (IN PROGRESS):
+Matches images within a set of images, singling out the duplicates.
+It is intended to be used for large image sets.
