@@ -1,3 +1,5 @@
 This program will find information on the license key supplied for a Microsoft Office product.
 
 It only works with Office 2010 and newer and only and a Windows machine
+
+Provided .sln file is for Visual Studio 2013.
