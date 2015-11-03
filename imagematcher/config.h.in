@@ -1,0 +1,3 @@
+/* Just checking for dirent.h at this time */
+
+#cmakedefine HAVE_DIRENT_H
