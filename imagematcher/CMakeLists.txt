@@ -5,7 +5,7 @@ project( imagematcher )
 add_definitions(-std=c++98)
 
 find_package( OpenCV REQUIRED )
-add_executable( imagematcher main.cpp image_match_table.cpp match.cpp )
+add_executable( imagematcher main.cpp image_match_table.cpp match.cpp folder_walk.cpp )
 target_link_libraries( imagematcher ${OpenCV_LIBS} )
 
 include(CheckIncludeFiles)

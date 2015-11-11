@@ -16,7 +16,7 @@ int main(int argc, char **argv){
 	// Each element is for one file, so we need a list of these.
 	list<match_table> matches;
 	// Images are at argv[1].
-	traverse_folder(argv[1], &matches, false);
+	folder_walk(argv[1], matches, false);
 
 	// TODO: Implement any and everything else
 	return 0;

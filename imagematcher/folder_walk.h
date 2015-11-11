@@ -23,6 +23,6 @@
  * @param recurse
  * Boolean to indicate whether we traverse folders or not.
  */
-void traverse_folder(char *path, list<match_table> &matches, bool recurse);
+void folder_walk(const char *path, list<match_table> &matches, bool recurse);
 
 #endif
