@@ -1,4 +1,4 @@
-/*
+/**
  * image_match_table.h
  *
  * Defines a class for storing a list of

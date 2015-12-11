@@ -1,4 +1,4 @@
-/*
+/**
  * match.h
  *
  * Contains declarations of functions that perform image comparison.

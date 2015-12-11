@@ -1,4 +1,4 @@
-/*
+/**
  * match.cpp
  *
  * Implements the code to match images based on content.

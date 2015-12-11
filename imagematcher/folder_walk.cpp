@@ -18,6 +18,7 @@
 using namespace std;
 
 void folder_walk(const char *path, list<match_table> &matches, bool recurse){
+#ifdef HAVE_DIRENT_H
 	DIR *dir = opendir(path);
 	if (!dir){
 		// Output an error message.
@@ -41,9 +42,15 @@ void folder_walk(const char *path, list<match_table> &matches, bool recurse){
 					folder_walk(new_path.c_str(), matches, true);
 				}
 				break;
+			default:
+				// Maybe do something here, I'm not sure.
+				;
 		}
 	}
 	
 	// Clean up at the end.
 	closedir(dir);
+#else
+#error Not yet implemented.
+#endif
 }

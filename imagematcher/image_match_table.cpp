@@ -1,4 +1,4 @@
-/*
+/**
  * image_match_table.cpp
  *
  * Implements the class methods for storing a list of

@@ -1,4 +1,4 @@
-/*
+/**
  * main.cpp
  *
  * Contains the entry point for the duplicate image finder.
